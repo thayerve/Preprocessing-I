@@ -1,11 +1,12 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-
-  <title>My Resume</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>V Thayer Resumé</title>
+  <link rel="icon" href="images/vt-favicon.jpg">
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -14,6 +15,88 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="intro">
+    <img src="images/vt-favicon.jpg" class="intro-img">
+    <section class="intro1">
+      <h1>Virginia Thayer - Web Dev</h1>
+      <p class="subhead">Technology is my jam!</p>
+    </section>
+    <section class="intro2">
+      <p>
+        It's probably in your best interest to team up with me ;)
+      </p>
+      <button>
+        Let's Team Up
+      </button>
+    </section>
+  </div>
+
+  <div class="middle-content">
+    <section class="bio">
+      <h2>Listen Up...</h2>
+      <p>
+        paragraph of text . ....... ... .... ...
+      </p>
+    </section>
+    <section class="skills">
+      <h3>Stuff I'm Good At</h3>
+      <ul>
+        <li>Singing</li>
+        <li>Coding up UI</li>
+        <li>Solving puzzles</li>
+        <li>Collaborating</li>
+        <li>Swimming</li>
+      </ul>
+
+    </section>
+  </div>
+
+  <div class="experience">
+    <h3>Work History</h3>
+    <div class ="table">
+      <section class="column-headers">
+        <span class="yrs">Time</span>
+        <span class="company">Company</span>
+        <span class="title">Title</span>
+        <span class="tech">Tech Used</span>
+      </section>
+
+      <section class="job job1">
+        <span class="yrs">3y</span>
+        <span class="company">Stripe</span>
+        <span class="title">User Ops Specialist</span>
+        <span class="tech">Stripe API, Zendesk</span>
+      </section>
+
+      <section class="job job2">
+        <span class="yrs">1y</span>
+        <span class="company">AgileBits</span>
+        <span class="title">Day Brightener</span>
+        <span class="tech">Respondly</span>
+
+      </section>
+
+      <section class="job job3">
+        <span class="yrs">2m</span>
+        <span class="company">Mozilla</span>
+        <span class="title">Ascend Project participant</span>
+        <span class="tech">git, cli, js</span>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <p>Copyright myself 2019</p>
+  </footer>
 </body>
+
 </html>
