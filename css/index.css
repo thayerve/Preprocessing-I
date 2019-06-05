@@ -132,6 +132,9 @@ table {
 }
 /* Variables */
 /* Mixins */
+.debug {
+  outline: 2px solid red;
+}
 .linktextstyle {
   text-decoration: none;
   color: #1b4a75;
@@ -142,31 +145,53 @@ table {
 }
 .buttonstyle {
   padding: 2% 5%;
-  text-emphasis-style: bold;
   border-radius: 1rem 4rem;
   background-color: #1b4a75;
   color: white;
   font-size: 1.6rem;
+  margin: 2% 0;
   font-weight: bold;
+}
+.timestyle {
+  flex-grow: 1;
+}
+.companystyle {
+  flex-grow: 2;
+}
+.titlestyle {
+  flex-grow: 4;
+}
+.techstyle {
+  flex-grow: 2;
 }
 /* Page styles */
 html,
 body {
   height: 100%;
-  width: 96%;
   max-width: 800px;
   padding: 1% auto;
   font-size: 62.5%;
   font-family: cubano, sans-serif;
+  margin: 2%;
+}
+body {
+  font-size: 1.6rem;
+  width: 96%;
 }
 h1 {
+  font-size: 4rem;
+  padding: 2% 0;
+}
+h2 {
   font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
 }
 .subhead {
   font-size: 1.8rem;
 }
 body {
-  background-color: lightcoral;
   color: #1b4a75;
   margin: 0;
 }
@@ -185,7 +210,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 4%;
+  padding: 4% 0;
 }
 nav a {
   text-decoration: none;
@@ -197,26 +222,91 @@ nav a {
   width: 50%;
 }
 .intro {
-  background: gray;
+  background: lightcoral;
+  padding: 1% 2%;
+}
+.intro img {
+  margin: 1% 0;
 }
 .intro .intro1 {
   border-bottom: 1px solid #1b4a75;
+  padding: 1% 0;
+}
+.intro .intro2 {
+  padding-top: 4%;
 }
 .intro .intro2 p {
   font-size: 1.4rem;
 }
 .intro .intro2 button {
   padding: 2% 5%;
-  text-emphasis-style: bold;
   border-radius: 1rem 4rem;
   background-color: #1b4a75;
   color: white;
   font-size: 1.6rem;
+  margin: 2% 0;
   font-weight: bold;
+}
+.middle-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  font-size: 1.6 rem;
+}
+.middle-content section {
+  width: 49%;
 }
 .column-headers {
   font-weight: bold;
 }
 .yrs {
   font-weight: bold;
+}
+.experience {
+  font-size: 1.6 rem;
+}
+.experience .table {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5%;
+}
+.experience .table section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid #1b4a75;
+  padding: 1%;
+}
+.experience .table .job1,
+.experience .table .job3 {
+  background: lightcoral;
+}
+.experience .table .yrs {
+  flex-grow: 1;
+}
+.experience .table .company {
+  flex-grow: 2;
+}
+.experience .table .title {
+  flex-grow: 4;
+}
+.experience .table .tech {
+  flex-grow: 2;
+}
+.experience .table .column-headers {
+  font-weight: bold;
+}
+.experience .table .job {
+  align-items: flex-start;
+}
+footer {
+  display: flex;
+  background: #1b4a75;
+  color: white;
+  font-size: 1.4rem;
+  justify-content: center;
+  margin-top: 1.5%;
+  padding: 1.5% 0;
 }

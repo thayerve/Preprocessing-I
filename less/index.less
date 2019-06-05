@@ -58,6 +58,11 @@ table {
 @blushing: lightcoral;
 
 /* Mixins */
+
+.debug {
+	outline: 2px solid red;
+  }
+
 .linktextstyle {
 	text-decoration: none;
 	color: @greatblue;
@@ -70,28 +75,56 @@ table {
 
 .buttonstyle {
 	padding: 2% 5%;
-	text-emphasis-style: bold;
 	border-radius: 1rem 4rem;
 	background-color: @greatblue;
 	color: white;
 	font-size: 1.6rem;
+	margin: 2% 0;
 	.bold();
 }
 
+.timestyle {
+	flex-grow: 1;
+}
 
+.companystyle {
+	flex-grow: 2;
+}
+
+.titlestyle {
+	flex-grow: 4;
+}
+
+.techstyle {
+	flex-grow: 2;
+}
 
 /* Page styles */
 html, body {
 	height: 100%;
-	width: 96%;
 	max-width: 800px;
 	padding: 1% auto;
 	font-size: 62.5%;
 	font-family: cubano, sans-serif;
+	margin: 2%;
+}
+
+body {
+	font-size: 1.6rem;
+	width: 96%;
 }
 
 h1 {
+	font-size: 4rem;
+	padding: 2% 0;
+}
+
+h2 {
 	font-size: 3rem;
+}
+
+h3 {
+	font-size: 2rem;
 }
 
 .subhead {
@@ -99,7 +132,6 @@ h1 {
 }
 
 body {
-	background-color: @blushing;
 	color: @greatblue;
 	margin: 0;
 
@@ -117,7 +149,7 @@ nav {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	padding: 4%;
+	padding: 4% 0;
 	
 	a {
 		.linktextstyle();
@@ -130,14 +162,21 @@ nav {
 }
 
 .intro {
-	background: gray;
+	background: @blushing;
+	padding: 1% 2%;
 
+	img {
+		margin: 1% 0;
+	}
 	.intro1{
 		border-bottom: 1px solid @greatblue;
+		padding: 1% 0;
 	}
 	.intro2{
+		padding-top: 4%;
 		p {
 			font-size: 1.4rem;
+			
 		}
 		button{
 			.buttonstyle();
@@ -146,6 +185,21 @@ nav {
 	}
 }
 
+.middle-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	font-size: 1.6 rem;
+
+	section {
+		width: 49%;
+
+		.bio {
+
+		}
+	}
+}
 
 .column-headers {
 	.bold();
@@ -153,4 +207,58 @@ nav {
 
 .yrs {
 	.bold();
+}
+
+.experience {
+	font-size: 1.6 rem;
+	.table {
+		display: flex;
+		flex-direction: column;
+		margin-top: 1.5%;
+		section {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			border-top: 1px solid @greatblue;
+			padding: 1%;
+		}
+
+		.job1, .job3 {
+			background: @blushing;
+		}
+
+		.yrs { 
+			.timestyle();
+		}
+
+		.company {
+			.companystyle();
+		}
+		.title {
+			.titlestyle();
+		}
+		.tech {
+			.techstyle();
+		}
+
+		.column-headers {
+			.bold();
+
+		}
+		.job {
+				align-items: flex-start;
+		}
+	}
+
+}
+
+footer {
+	display: flex;
+	background: @greatblue;
+	color: white;
+	font-size: 1.4rem;
+	justify-content: center;
+	margin-top: 1.5%;
+	padding: 1.5% 0;
 }
